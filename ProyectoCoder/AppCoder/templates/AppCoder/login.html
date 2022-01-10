@@ -1,0 +1,24 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+    {% block contenidoDinamico2 %}
+        <h1 class="mb-1">LoGIN</h1>
+    {% endblock %}
+
+
+    {% block contenidoDinamico %}
+    
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        {{form.as_p}}
+
+        <button type="submit"> Iniciar Sesión</button>
+
+
+    </form>
+
+
+    {% endblock %}
